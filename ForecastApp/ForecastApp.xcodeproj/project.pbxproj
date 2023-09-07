@@ -20,6 +20,8 @@
 		A719E14A2AAA285A002A736B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A719E1492AAA285A002A736B /* HomeViewController.swift */; };
 		A719E14C2AAA2864002A736B /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A719E14B2AAA2864002A736B /* CityViewController.swift */; };
 		A719E14E2AAA2B3E002A736B /* HomeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A719E14D2AAA2B3E002A736B /* HomeTableView.swift */; };
+		A719E1522AAA3176002A736B /* MapNavBarIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = A719E1512AAA3176002A736B /* MapNavBarIcon.swift */; };
+		A79EBADE2AAA3D3D00141D36 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79EBADD2AAA3D3D00141D36 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		A719E1492AAA285A002A736B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A719E14B2AAA2864002A736B /* CityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
 		A719E14D2AAA2B3E002A736B /* HomeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableView.swift; sourceTree = "<group>"; };
+		A719E1512AAA3176002A736B /* MapNavBarIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapNavBarIcon.swift; sourceTree = "<group>"; };
+		A79EBADD2AAA3D3D00141D36 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 		A719E1132AAA27CF002A736B /* ForecastApp */ = {
 			isa = PBXGroup;
 			children = (
+				A719E14F2AAA3155002A736B /* UIElements */,
 				A719E1442AAA2817002A736B /* Presentation */,
 				A719E1142AAA27CF002A736B /* AppDelegate.swift */,
 				A719E1162AAA27CF002A736B /* SceneDelegate.swift */,
@@ -151,6 +156,7 @@
 			children = (
 				A719E1492AAA285A002A736B /* HomeViewController.swift */,
 				A719E14D2AAA2B3E002A736B /* HomeTableView.swift */,
+				A79EBADD2AAA3D3D00141D36 /* MapView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -161,6 +167,22 @@
 				A719E14B2AAA2864002A736B /* CityViewController.swift */,
 			);
 			path = City;
+			sourceTree = "<group>";
+		};
+		A719E14F2AAA3155002A736B /* UIElements */ = {
+			isa = PBXGroup;
+			children = (
+				A719E1502AAA315C002A736B /* Icons */,
+			);
+			path = UIElements;
+			sourceTree = "<group>";
+		};
+		A719E1502AAA315C002A736B /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				A719E1512AAA3176002A736B /* MapNavBarIcon.swift */,
+			);
+			path = Icons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,6 +323,8 @@
 				A719E1462AAA2833002A736B /* MainNavigationController.swift in Sources */,
 				A719E1172AAA27CF002A736B /* SceneDelegate.swift in Sources */,
 				A719E14C2AAA2864002A736B /* CityViewController.swift in Sources */,
+				A79EBADE2AAA3D3D00141D36 /* MapView.swift in Sources */,
+				A719E1522AAA3176002A736B /* MapNavBarIcon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

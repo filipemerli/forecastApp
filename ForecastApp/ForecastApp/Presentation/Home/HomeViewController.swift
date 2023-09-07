@@ -12,14 +12,30 @@ final class HomeViewController: UIViewController {
     private lazy var tableView: HomeTableView = {
         let table = HomeTableView()
         table.translatesAutoresizingMaskIntoConstraints = false
-        table.backgroundColor = .green
         return table
     }()
 
+    private lazy var tableViewRightItem: MapNavBarIcon = {
+        let item = MapNavBarIcon()
+        item.target = self
+        item.action = #selector(rightBarButtonItemAction)
+        return item
+    }()
+
+    private lazy var mapView: MapView = {
+        let map = MapView()
+        map.translatesAutoresizingMaskIntoConstraints = false
+        return map
+    }()
+
     override func viewDidLoad() {
-        view.backgroundColor = .red
         title = "Weather"
         configureView()
+    }
+
+    @objc func rightBarButtonItemAction() {
+        mapView.isHidden = !mapView.isHidden
+        tableViewRightItem.toggleImage(showMap: mapView.isHidden)
     }
 }
 
@@ -49,6 +65,10 @@ private extension HomeViewController {
         view.addSubview(tableView)
         configureConstraints()
         configureTableView()
+        configureNavigationBar()
+        view.addSubview(mapView)
+        mapView.isHidden = true
+        configureMapViewConstraints()
     }
 
     func configureConstraints() {
@@ -64,5 +84,18 @@ private extension HomeViewController {
         tableView.dataSource = self
         tableView.delegate = self
         // TODO: Register UITableViewCell
+    }
+
+    func configureNavigationBar() {
+        navigationItem.rightBarButtonItem = tableViewRightItem
+    }
+
+    func configureMapViewConstraints() {
+        NSLayoutConstraint.activate([
+            mapView.topAnchor.constraint(equalTo: tableView.topAnchor),
+            mapView.bottomAnchor.constraint(equalTo: tableView.bottomAnchor),
+            mapView.leadingAnchor.constraint(equalTo: tableView.leadingAnchor),
+            mapView.trailingAnchor.constraint(equalTo: tableView.trailingAnchor)
+        ])
     }
 }
