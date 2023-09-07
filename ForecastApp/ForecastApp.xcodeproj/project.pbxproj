@@ -19,6 +19,7 @@
 		A719E1462AAA2833002A736B /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A719E1452AAA2833002A736B /* MainNavigationController.swift */; };
 		A719E14A2AAA285A002A736B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A719E1492AAA285A002A736B /* HomeViewController.swift */; };
 		A719E14C2AAA2864002A736B /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A719E14B2AAA2864002A736B /* CityViewController.swift */; };
+		A719E14E2AAA2B3E002A736B /* HomeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A719E14D2AAA2B3E002A736B /* HomeTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		A719E1452AAA2833002A736B /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		A719E1492AAA285A002A736B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A719E14B2AAA2864002A736B /* CityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
+		A719E14D2AAA2B3E002A736B /* HomeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				A719E1492AAA285A002A736B /* HomeViewController.swift */,
+				A719E14D2AAA2B3E002A736B /* HomeTableView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A719E14E2AAA2B3E002A736B /* HomeTableView.swift in Sources */,
 				A719E14A2AAA285A002A736B /* HomeViewController.swift in Sources */,
 				A719E1192AAA27CF002A736B /* ViewController.swift in Sources */,
 				A719E1152AAA27CF002A736B /* AppDelegate.swift in Sources */,

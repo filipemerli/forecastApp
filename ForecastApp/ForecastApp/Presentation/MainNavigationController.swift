@@ -8,5 +8,8 @@
 import UIKit
 
 final class MainNavigationController: UINavigationController {
-    
+
+    override func viewDidLoad() {
+        navigationBar.prefersLargeTitles = true
+    }
 }
